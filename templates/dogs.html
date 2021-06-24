@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block page_content %}
+    <h1 class="h1 alert-warning"> The best man's friend is always cool.</h1>
+    <div class="row">
+        {% for images in pics %}
+            <div class="col-md-3">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="{{ images.image.url }}" alt="Navy seal" width="150" height="150"
+                         title="{{ images.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ images.name }}</h5>
+                        <h6 class="card-text">Added on {{ images.added_on }}</h6>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
