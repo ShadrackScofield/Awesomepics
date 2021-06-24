@@ -1,1 +1,1 @@
-# These are cool and awesome pics.
+# This is a cool and awesome pics profile
